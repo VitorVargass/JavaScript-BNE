@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Imovel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Calculadora Imovel de Luxo</h1>
+<div class="input-center">
+        <input type="text" placeholder="Digite o numero de quartos" required id="quartos">
+        <input type="text" placeholder="Digite a metragem " required id="metragem">
+        <input type="text" placeholder="Preço do m²" required id="preco">
+</div>
+<!--Inputs radios-->
+<div class="move">
+    <div class="radios-inpt">
+        <div>
+        <input type="radio" name="opcao" id="radio-casa"><label for="">Casa</label> 
+        </div>
+        <div>
+        <input type="radio" name="opcao" id="radio-ap"><label for="">Apartamento</label>
+        </div>
+    </div>
+</div>
+<!--Input quando for selecionado apartamento-->
+<div class="apart">
+<input type="text" placeholder="Nº do andar" id="andar">
+</div>
+<div class="move-btn">
+    <button onclick="teste()">Calcular</button>
+</div>
+<div id="resultado"></div>
+
+</body>
+</html>
